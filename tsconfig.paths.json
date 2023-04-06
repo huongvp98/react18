@@ -10,7 +10,8 @@
       "store/*": ["store/*"],
       "constant/*": ["constant/*"],
       "types/*": ["types/*"],
-      "utils/*": ["utils/*"]
+      "utils/*": ["utils/*"],
+      "fetures/*": ["fetures/*"]
     }
   }
 }
