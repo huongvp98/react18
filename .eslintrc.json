@@ -33,6 +33,23 @@
     //     "project": ["tsconfig.json", "package/tsconfig.json"],
     //     "extensions": [".js", ".jsx", ".ts", ".tsx"],
     //     "moduleDirectory": ["node_modules", "src/"]
+    //   },
+    //   //   "alias": [["@pages", "./src/pages"]],
+    //   "import/internal-regex": "^@",
+    //   "eslint-import-resolver-custom-alias": {
+    //     "alias": {
+    //       "@pages": "./src/pges"
+    //     },
+    //     "extensions": [".ts"]
+    //   }
+    // }
+    // "import/parsers": {
+    //   "@typescript-eslint/parser": [".ts", ".tsx"]
+    // },
+    // "import/resolver": {
+    //   "alias": {
+    //     "map": [["@components", "./src/components"]],
+    //     "extensions": [".ts", ".js", ".json"]
     //   }
     // }
   },

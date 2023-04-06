@@ -1,7 +1,8 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import Home from "pages/home";
+import Home from "./pages/home";
+import Counter from "./fetures/counter";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         </a>
       </header>
       <Home />
+      <Counter />
     </div>
   );
 }
