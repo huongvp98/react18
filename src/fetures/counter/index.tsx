@@ -1,18 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 import { useAppDispatch, useAppSelector } from "../../stores/hook";
 import { decrement, increment } from "./counterSlice";
+import { AppDispatch } from "stores/store";
 
 function Counter() {
-  const dispatch = useAppDispatch();
-  const counter = useAppSelector((state) => state.counter.value);
-  console.log(counter);
+  const dispatch: AppDispatch = useAppDispatch();
+  const counter: number = useAppSelector((state) => state.counter.value);
   const onIncrement = () => {
     dispatch(increment());
   };
   const onDecrement = () => dispatch(decrement());
   return (
-    <div>
-      Counter : {counter} <button onClick={() => onIncrement()}>+</button>
+    <div style={{ height: "300px", fontSize: 20 }}>
+      <button onClick={() => onIncrement()}>+</button>
+      Counter : {counter}
       <button onClick={() => onDecrement()}>-</button>
     </div>
   );

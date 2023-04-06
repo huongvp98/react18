@@ -7,7 +7,7 @@
       "components/*": ["components/*"],
       "hooks/*": ["hooks/*"],
       "pages/*": ["pages/*"],
-      "store/*": ["store/*"],
+      "stores/*": ["stores/*"],
       "constant/*": ["constant/*"],
       "types/*": ["types/*"],
       "utils/*": ["utils/*"],
