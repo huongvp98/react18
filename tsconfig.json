@@ -17,8 +17,15 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react"
+    "jsx": "react",
+    "types": ["cypress", "node"]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/",
+    "cypress/support/commands.ts"
+  ],
   "exclude": ["node_modules"]
 }
