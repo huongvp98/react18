@@ -3,6 +3,10 @@ import type { PayloadAction } from "@reduxjs/toolkit";
 import type { RootState } from "stores/store";
 
 // Define a type for the slice state
+interface IUser {
+  id: number;
+  name: string;
+}
 export interface CounterState {
   value: number;
   max?: number;
@@ -23,6 +27,20 @@ export const getMax = createAsyncThunk(
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         resolve(100);
+      }, 2000);
+    });
+    // return data;
+  }
+);
+export const getUser = createAsyncThunk(
+  "getmax",
+  async (id: number, thunkAPI): Promise<IUser> => {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve({
+          id,
+          name: "huongpt",
+        });
       }, 2000);
     });
     // return data;
