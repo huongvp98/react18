@@ -11,7 +11,7 @@
       "constant/*": ["constant/*"],
       "types/*": ["types/*"],
       "utils/*": ["utils/*"],
-      "fetures/*": ["fetures/*"]
+      "features/*": ["features/*"]
     }
   }
 }

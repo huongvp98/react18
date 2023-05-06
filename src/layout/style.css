@@ -1,0 +1,10 @@
+.layout {
+  display: flex;
+  flex-direction: row;
+}
+.layout-header-content {
+  width: -webkit-fill-available;
+}
+.layout-content {
+  min-height: 90vh;
+}

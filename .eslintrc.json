@@ -15,7 +15,8 @@
       "jsx": true
     },
     "project": "./tsconfig.json",
-    "tsconfigRootDir": "./"
+    "tsconfigRootDir": "./",
+    "parser": "@typescript-eslint/parser" // fix e2e cypress
   },
   "plugins": ["react", "@typescript-eslint"],
   "rules": {},
